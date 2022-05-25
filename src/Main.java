@@ -18,36 +18,37 @@ public class Main {
         System.out.println("задача 3");
 
 
-        for (int i = 2; i >= 0; i--) {
-                System.out.print(threePines[i] + ", ");
-            }
+//        for (int i = threePines.length - 1; i >= 0; i--) {
+//                System.out.print(threePines[i] + ", ");
+//            }
+        System.out.println(threePines [2] + ", " + threePines[1] + ", " + threePines[0]);
 
-        System.out.println(" ");
-
-        for (int i = 2; i >=0; i--) {
-            System.out.print(firewood[i] + ", ");
-        }
-        System.out.println(" ");
-
-        for (int i = 4; i >= 0; i--) {
-            System.out.print (sawdust[i] + ",\s");
-        }
-        System.out.println("\n");
-
+//        System.out.println(" ");
+//
+//        for (int i = firewood.length - 1; i >=0; i--) {
+//            System.out.print(firewood[i] + ", ");
+//        }
+        System.out.println(firewood [2] + ", " + firewood [1] + ", " + firewood [0]);
+//
+//        System.out.println(" ");
+//
+//        for (int i = sawdust.length - 1; i >= 0; i--) {
+//            System.out.print (sawdust[i] + ",\s");
+//        }
+        System.out.println(sawdust [4] + ", " + sawdust [3] + ", " + sawdust [2] + ", " + sawdust [1] + ", " + sawdust [0]);
+//
+//        System.out.println("\n");
 
         System.out.println();
         System.out.println("задача 4");
 
-//        int i = threePines [i];
-
         for (int i = 0; i <= 2; i++) {
             if ((i & 1) == 0) {
-                System.out.print(++threePines[i] + ", ");}
-
+                System.out.print(++threePines[i] + ", ");
+            }
             else {
-                System.out.print(threePines[i] + ", ");}
-
-
+                System.out.print(threePines[i] + ", ");
+            }
         }
     }
 }
