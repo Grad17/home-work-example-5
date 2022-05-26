@@ -18,37 +18,47 @@ public class Main {
         System.out.println("задача 3");
 
 
-//        for (int i = threePines.length - 1; i >= 0; i--) {
-//                System.out.print(threePines[i] + ", ");
-//            }
-        System.out.println(threePines [2] + ", " + threePines[1] + ", " + threePines[0]);
-
-//        System.out.println(" ");
-//
-//        for (int i = firewood.length - 1; i >=0; i--) {
-//            System.out.print(firewood[i] + ", ");
-//        }
-        System.out.println(firewood [2] + ", " + firewood [1] + ", " + firewood [0]);
-//
-//        System.out.println(" ");
-//
-//        for (int i = sawdust.length - 1; i >= 0; i--) {
-//            System.out.print (sawdust[i] + ",\s");
-//        }
-        System.out.println(sawdust [4] + ", " + sawdust [3] + ", " + sawdust [2] + ", " + sawdust [1] + ", " + sawdust [0]);
-//
-//        System.out.println("\n");
+        for (int i = threePines.length - 1; i >= 0; i--) {
+            if (i == 0 ) {
+                System.out.print (threePines[i]);
+            } else
+                System.out.print (threePines[i] + ", ");
+            }
 
         System.out.println();
-        System.out.println("задача 4");
 
-        for (int i = 0; i <= 2; i++) {
+        for (int i = firewood.length - 1; i >= 0; i--) {
+            if (i == 0 ) {
+                System.out.print (firewood[i]);
+            } else
+                System.out.print (firewood[i] + ", ");
+        }
+
+        System.out.println();
+
+        for (int i = sawdust.length - 1; i >= 0; i--) {
+            if (i == 0 ) {
+                System.out.print (sawdust[i]);
+            } else
+                System.out.print (sawdust[i] + ", ");
+        }
+
+        System.out.println("\n");
+
+
+        System.out.println("задача 4\n");
+
+        for (int i = 0; i <= threePines.length - 1; i++) {
             if ((i & 1) == 0) {
-                System.out.print(++threePines[i] + ", ");
+                threePines[i] ++;
             }
-            else {
-                System.out.print(threePines[i] + ", ");
-            }
+            if (i == threePines.length - 1) {
+                System.out.print (threePines[i]);
+            }else
+                System.out.print (threePines[i] + ", ");
         }
     }
 }
+
+
+
